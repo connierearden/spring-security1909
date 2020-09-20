@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-security:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-security</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring_security.war">
+      <element id="artifact" artifact-name="spring-security:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="jpa-descriptors" facet="spring-security/jpa/JPA" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
